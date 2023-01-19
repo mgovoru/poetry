@@ -1,0 +1,162 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+input,
+button,
+textarea {
+  font-family: "Roboto", sans-serif;
+  font-size: inherit;
+}
+
+button {
+  cursor: pointer;
+  color: inherit;
+  background-color: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+[class*=__container] {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 15px;
+}
+
+[class*=-ibg] {
+  position: relative;
+}
+[class*=-ibg] img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #000;
+  font-size: calc(1.7 * (1vw + 1vh));
+  letter-spacing: 0.2rem;
+}
+
+.unvisible {
+  display: none;
+}
+
+body {
+  /* Скрываем Scrollbar */
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  height: 3200px;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  -webkit-perspective: 1500px;
+          perspective: 1500px;
+  padding: 0 15px;
+}
+
+.main__gallery {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  height: 100%;
+}
+
+.frame {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.75s cubic-bezier(0.075, 0.5, 0, 1);
+  transition: all 0.75s cubic-bezier(0.075, 0.5, 0, 1);
+  will-change: transform;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  background-color: #fff;
+  text-align: center;
+}
+
+.poem__title {
+  font-size: 6rem;
+}
+
+.photo__img {
+  width: calc(36 * (1vw + 1vh) * 1.2);
+  height: calc(26 * (1vw + 1vh));
+}
+
+.video__source {
+  width: calc(36 * (1vw + 1vh));
+  height: calc(26 * (1vw + 1vh));
+}
